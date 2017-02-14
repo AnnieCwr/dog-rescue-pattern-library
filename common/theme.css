@@ -1,0 +1,13 @@
+:root {
+  --color-primary: #EDD7C8;
+  --color-primary-light: #F6ECE5;
+  --color-secondary: #9C8881;
+  --color-neutural-beige: #E2E2E0;
+
+  --font-primary: Open Sans', sans-serif;'
+  --font-secondary: 'Lusitana', serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
