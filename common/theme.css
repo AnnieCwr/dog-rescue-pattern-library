@@ -2,7 +2,8 @@
   --color-primary: #9c8881;
   --color-primary-light: #edd7c8;
   --color-secondary: #f6ece5;
-  --color-neutural-grey: #e2e2e0;
+  --color-neutural-grey: #9b9b9b;
+  --color-neutural-light: #e2e2e0;
   --font-primary: "Open Sans", sans-serif;
 }
 
@@ -11,22 +12,18 @@ html {
 }
 
 h1 {
-  color: #9c8881;
+  color: var(--color-primary);
   text-align: left;
 }
 
 h2 {
   font-family: var(--font-primary);
-  color: #9c8881;
-}
-
-h6 {
-  font-family: var(--font-secondary);
+  color: var(--color-primary);
 }
 
 p {
   font-family: var(--font-secondary);
-  color: #9c8881;
+  color: var(--color-neutural-grey);
 }
 
 li {
@@ -38,11 +35,12 @@ ul {
 }
 
 a {
-  color: #9c8881;
+  color: var(--color-primary-light);
+
 }
 
 a:hover {
-  color: #edd7c8;
+  color: var(--color-secondary);
 }
 
 mark {
