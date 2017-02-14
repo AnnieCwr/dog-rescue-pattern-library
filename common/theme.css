@@ -1,13 +1,51 @@
 :root {
-  --color-primary: #EDD7C8;
-  --color-primary-light: #F6ECE5;
-  --color-secondary: #9C8881;
-  --color-neutural-beige: #E2E2E0;
-
-  --font-primary: Open Sans', sans-serif;'
-  --font-secondary: 'Lusitana', serif;
+  --color-primary: #9c8881;
+  --color-primary-light: #edd7c8;
+  --color-secondary: #f6ece5;
+  --color-neutural-grey: #e2e2e0;
+  --font-primary: "Open Sans", sans-serif;
 }
 
 html {
   font-family: var(--font-primary);
+}
+
+h1 {
+  color: #9c8881;
+  text-align: left;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  color: #9c8881;
+}
+
+h6 {
+  font-family: var(--font-secondary);
+}
+
+p {
+  font-family: var(--font-secondary);
+  color: #9c8881;
+}
+
+li {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #9c8881;
+}
+
+a:hover {
+  color: #edd7c8;
+}
+
+mark {
+  background-color: var(--color-neutural-grey);
+  color: #fff;
 }
