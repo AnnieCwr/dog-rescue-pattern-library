@@ -1,3 +1,33 @@
-.card {
+#Paws,
+#bones,
+#all {
   color: #cdb8ab;
+  transition-delay: all 500ms;
+}
+
+#circle {
+  stroke: #cdb8ab;
+  transition-delay: all 500ms;
+
+}
+
+h2 {
+  text-align: center;
+  color: #cdb8ab;
+}
+
+#cats,
+#dogs,
+#all {
+  text-align: center;
+}
+
+a:hover #circle {
+  fill: #cdb8ab;
+}
+
+a:hover #Paws,
+a:hover #bones,
+a:hover #all {
+  fill: #ffffff;
 }
