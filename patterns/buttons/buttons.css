@@ -1,16 +1,38 @@
 .btn {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
+  border-radius: 9px;
+}
+
+.btn-reg:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
 .btn-light {
+  background-color: var(--color-neutural-grey);
+  border-color: var(--color-neutural-grey);
+  color: #fff;
+}
+
+.btn-light:hover {
   background-color: var(--color-neutural-light);
   border-color: var(--color-neutural-light);
-  color: #fff;
 }
 
 .btn-ghost {
   background-color: transparent;
   border-color: var(--color-neutural-grey);
   color: var(--color-neutural-grey);
+  padding: .3rem 1.5rem;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  border-radius: 15px;
+}
+
+.btn-ghost:hover {
+  color: #fff;
+  background-color: var(--color-neutural-light);
+  border-color: var(--color-neutural-light);
 }

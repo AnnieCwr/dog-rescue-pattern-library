@@ -26,21 +26,14 @@ p {
   color: var(--color-neutural-grey);
 }
 
-li {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
 a {
   color: var(--color-primary-light);
+  text-decoration: none;
 
 }
 
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 mark {
