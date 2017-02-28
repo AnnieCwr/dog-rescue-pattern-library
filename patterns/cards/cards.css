@@ -1,14 +1,11 @@
-#Paws,
+#paws,
 #bones,
 #all {
   color: #cdb8ab;
-  transition-delay: all 500ms;
 }
 
-#circle {
+.circle {
   stroke: #cdb8ab;
-  transition-delay: all 500ms;
-
 }
 
 h2 {
@@ -22,12 +19,12 @@ h2 {
   text-align: center;
 }
 
-a:hover #circle {
+a:hover .circle {
   fill: #cdb8ab;
 }
 
-a:hover #Paws,
+a:hover #paws,
 a:hover #bones,
 a:hover #all {
-  fill: #ffffff;
+  fill: #fff;
 }
