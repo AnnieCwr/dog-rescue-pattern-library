@@ -1,0 +1,55 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+img {
+  width: 70%;
+}
+
+.card {
+  border: 3px solid #9c8881;
+  border-radius: 8px;
+  width: 15rem;
+  margin-right: 1.5rem;
+}
+
+p {
+  font-weight: normal;
+  display: block;
+  margin: 0;
+}
+
+h2 {
+  display: block;
+  margin: 0;
+}
+
+a {
+  background-color: #9c8881;
+  border-radius: 5px;
+  padding: .5rem;
+  font-weight: normal;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #edd7c8;
+}
