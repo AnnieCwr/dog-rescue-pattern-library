@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>form-error</title>
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,600,700" rel="stylesheet">
+  <link href="form-error.css" rel="stylesheet">
+</head>
+<body>
+  <form class="max-lenghth island" method="post" novalidate>
+    <h2>Adoption Information</h2>
+    <div class="error-message error-message-highlighted push island1-2" role="alert" aria-live="assertive">
+      <p class="push-0"><b>There are items that need to be filled in!</b></p>
+    </div>
+    <div class="push">
+      <label for="name" class="push-1-2">* Name</label>
+      <input id="name" required aria-describedby="name-error">
+      <p class="error-message milli island-1-4 push-0" id="name-error">
+        Please provide a name.
+      </p>
+    </div>
+    <div class="push">
+      <label for="name" class="push-1-2">* Age</label>
+      <input id="name" required aria-describedby="age-error">
+      <p class="error-message milli island-1-4 push-0" id="age-error">
+        Please put in your age.
+      </p>
+    </div>
+    <div class="push">
+      <label for="email" class="push-1-2">* Email</label>
+      <input type="email" id="email" required aria-describedby="email-error">
+      <p class="error-message milli island-1-4 push-0" id="email-error">
+        Please provide a correct email address.
+      </p>
+    </div>
+    <div class="push">
+      <label for="fitness" class="push-1-2">Activity Level</label>
+      <select id="fitness" name="fitness">
+        <option>No Preference</option>
+        <option>Minimal</option>
+        <option>Moderate</option>
+        <option>Active</option>
+        <option>Very Active</option>
+      </select>
+    </div>
+    <div class="push pad-t-1-2">
+      <input type="checkbox" id="agree" required aria-describedby="agree-error">
+      <label for="agree">
+        I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.
+      </label>
+      <p class="error-message milli island-1-4 push-0" id="agree-error">Please read and agree</p>
+    </div>
+    <div class="pad-1-2">
+      <button class="btn btn-reg" type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+</body>
+</html>

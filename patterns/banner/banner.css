@@ -29,3 +29,17 @@ h2 {
   width: 41%;
   font-weight: normal;
 }
+
+.btnn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #edd7c8;
+  border-radius: 6px;
+  padding: .5rem;
+}
+
+
+.btnn:hover {
+  background-color: #edd7c8;
+  color: #fff;
+}
