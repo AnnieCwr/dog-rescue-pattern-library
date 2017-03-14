@@ -42,6 +42,18 @@
         <option>Very Active</option>
       </select>
     </div>
+    <div class="push">
+      <label class="push-1-2">Do you have a breed preference, if so, please list</label>
+      <textarea id="why" name="why"></textarea>
+    </div>
+    <div class="push">
+      <input type="radio" name="gender" id="male">
+      <label for="male"> Male</label>
+      <input type="radio" name="gender" id="female">
+      <label for="female"> Female</label>
+      <input type="radio" name="gender" id="other">
+      <label for="other"> Other</label>
+    </div>
     <div class="push pad-t-1-2">
       <input type="checkbox" id="agree" required aria-describedby="agree-error">
       <label for="agree">
@@ -49,6 +61,7 @@
       </label>
       <p class="error-message milli island-1-4 push-0" id="agree-error">Please read and agree</p>
     </div>
+
     <div class="pad-1-2">
       <button class="btn btn-reg" type="submit">Submit</button>
     </div>

@@ -60,8 +60,25 @@ p {
 
 input {
   border-color: var(--color-primary);
+  border-radius: 3px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: var(--color-primary-light);
 }
 
 label {
   color: #545454;
+}
+
+select {
+  border-color: var(--color-primary);
+  border-radius: 3px;
+}
+
+textarea {
+  border-color: var(--color-primary);
+  border-radius: 3px;
 }
