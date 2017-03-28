@@ -31,7 +31,6 @@ nav a::before {
   height: 1.5em;
   position: absolute;
   left: 0;
-  top: (50%);
   transform: rotate(15deg);
 }
 

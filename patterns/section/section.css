@@ -18,3 +18,7 @@ h3 {
   text-decoration: underline;
   color: var(--color-primary);
 }
+
+.story:hover {
+  color: #ccc;
+}

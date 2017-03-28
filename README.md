@@ -1,5 +1,5 @@
 ---
-name: "Royal Rescue"
+name: "Loyal Rescue"
 fontUrl: "https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,600,700"
 fonts:
   primary: |
