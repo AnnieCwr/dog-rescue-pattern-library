@@ -38,6 +38,6 @@ nav li:first-child a::before {
   display: none;
 }
 
-ul {
+header {
   background-color: #9c8881;
 }
