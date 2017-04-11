@@ -22,3 +22,7 @@ h3 {
 .story:hover {
   color: #ccc;
 }
+
+.title {
+  color: var(--color-primary);
+}

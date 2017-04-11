@@ -37,3 +37,23 @@ nav a::before {
 nav li:first-child a::before {
   display: none;
 }
+
+.logo {
+  text-align: center;
+  padding-left: 1rem;
+
+}
+
+@media only screen and (min-width: 74em) {
+
+.logo {
+  text-align: left;
+}
+
+.nav {
+  text-align: right;
+}
+
+ul {
+  padding-left: 0;
+}

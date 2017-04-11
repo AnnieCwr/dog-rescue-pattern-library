@@ -8,23 +8,19 @@
   background: url("img/banner2.jpg");
   background-size: cover;
   height: 30rem;
-  background-position: 10% 80%;
+  background-position: 10% 59%;
   background-repeat: no-repeat;
-}
-
-body {
-  margin: 0;
 }
 
 .banner-content {
   margin: 10% 0;
 }
 
-h1 {
+.banner h1 {
   color: #fff;
 }
 
-h2 {
+.banner h2 {
   color: #fff;
   width: 41%;
   font-weight: normal;

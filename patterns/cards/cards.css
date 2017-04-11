@@ -8,7 +8,7 @@
   stroke: #cdb8ab;
 }
 
-h2 {
+.card h2 {
   text-align: center;
   color: #cdb8ab;
 }
@@ -17,14 +17,18 @@ h2 {
 #dogs,
 #all {
   text-align: center;
+  width: 40%;
 }
 
-a:hover .circle {
+.all {
+  width: 60%;
+
+.card a:hover .circle {
   fill: #cdb8ab;
 }
 
-a:hover #paws,
-a:hover #bones,
-a:hover #all {
+.card a:hover #paws,
+.card a:hover #bones,
+.card a:hover #all {
   fill: #fff;
 }
