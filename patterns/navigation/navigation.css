@@ -46,14 +46,16 @@ nav li:first-child a::before {
 
 @media only screen and (min-width: 74em) {
 
-.logo {
-  text-align: left;
-}
+  .logo {
+    text-align: left;
+  }
 
-.nav {
-  text-align: right;
-}
+  .nav {
+    text-align: right;
+  }
 
-ul {
-  padding-left: 0;
+  ul {
+    padding-left: 0;
+  }
+
 }

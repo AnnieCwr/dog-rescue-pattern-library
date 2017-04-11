@@ -10,10 +10,6 @@ nav a:hover {
   color: #fff;
 }
 
-.logo {
-  padding-left: 1rem;
-}
-
 nav a::after {
   content: "";
   position: absolute;
@@ -47,17 +43,18 @@ nav li:first-child a::before {
   padding-left: 1.5rem;
 }
 
-
 @media only screen and (min-width: 74em) {
 
-.logo {
-  text-align: left;
-}
+  .logo {
+    text-align: left;
+  }
 
-.nav {
-  text-align: right;
-}
+  .nav {
+    text-align: right;
+  }
 
-ul {
-  padding-left: 0;
+  ul {
+    padding-left: 0;
+  }
+
 }
