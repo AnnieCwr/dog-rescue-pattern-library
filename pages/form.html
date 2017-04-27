@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Loyal Rescue</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/navigation/navigation.css" rel="stylesheet">
+  <link href="../patterns/form/form-error.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lusitana|Open+Sans:400,600,700" rel="stylesheet">
+</head>
+<body>
+  <header class="logo grid gutter pad-t-2">
+    <div class="unit xs-1 s-1 m-1 l-1-4 logo">
+      <a href="#">
+       <img src="../images/logo.svg" alt="">
+      </a>
+    </div>
+    <nav class="unit xs-1 s-1 m-1 l-3-4 nav">
+      <ul class="island list-group-inline">
+        <li class="milli"><a href="home.html">Home</a></li>
+        <li class="milli"><a href="#">Adoption</a></li>
+        <li class="milli"><a href="#">Happy Tails</a></li>
+        <li class="milli"><a href="#">Application</a></li>
+        <li class="milli"><a href="#">FAQ</a></li>
+        <li class="milli"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form class="max-lenghth island pad-t" method="post" novalidate>
+    <h1>Application Form</h1>
+    <div class="island">
+      <h2 class="mega">BASIC INFORMATION</h2>
+      <div class="grid line1">
+        <div class="push name unit s-1 m-1-2 l-1-2 gutter">
+          <label for="name" class="push-1-2">* Name</label>
+          <input id="name" required aria-describedby="name-error">
+          <p class="error-message milli island-1-4 push-0" id="name-error">Please provide a name.</p>
+        </div>
+        <div class="push age unit s-1 m-1-2 l-1-2 gutter">
+          <label for="age" class="push-1-2">* Age</label>
+          <input id="age" required aria-describedby="age-error">
+          <p class="error-message milli island-1-4 push-0" id="age-error">Please put in your age.</p>
+        </div>
+      </div>
+      <div class="grid line2">
+        <div class="push address unit s-1 m-1-2 l-1-2 gutter">
+          <label for="address" class="push-1-2">* Address</label>
+          <input id="address" required aria-describedby="address-error">
+          <p class="error-message milli island-1-4 push-0" id="address-error">Please provide a valid address.</p>
+        </div>
+        <div class="push city unit s-1 m-1-2 l-1-2 gutter">
+          <label for="age" class="push-1-2">* City</label>
+          <input id="city" required aria-describedby="city-error">
+          <p class="error-message milli island-1-4 push-0" id="city-error">Please put in the city name.</p>
+        </div>
+      </div>
+      <div class="grid line5">
+        <div class="push unit s-1 m-1-2 l-1-2 gutter">
+          <label for="province" class="push-1-2">Province</label>
+          <select id="fitness" name="fitness">
+            <option>Ontario</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Quebec</option>
+            <option>New Brunswick</option>
+          </select>
+        </div>
+        <div class="push city unit s-1 m-1-2 l-1-2 gutter">
+          <label for="age" class="push-1-2">* Zip Code</label>
+          <input id="city" required aria-describedby="code-error">
+          <p class="error-message milli island-1-4 push-0" id="code-error">Please put in valid zip Code.</p>
+        </div>
+      </div>
+      <div class="grid line6">
+        <div class="push email unit s-1 m-1-2 l-1-2 gutter">
+          <label for="email" class="push-1-2">* Email</label>
+          <input type="email" id="email" required aria-describedby="email-error">
+          <p class="error-message milli island-1-4 push-0" id="email-error">Please provide a correct email address.</p>
+        </div>
+        <div class="push phone unit s-1 m-1-2 l-1-2 gutter">
+          <label for="phone" class="push-1-2">* Phone</label>
+          <input type="phone" id="phone" required aria-describedby="phone-error">
+          <p class="error-message milli island-1-4 push-0" id="phone-error">Please provide a phone number.</p>
+        </div>
+      </div>
+      <div class="push occupation gutter">
+        <label for="occupation" class="push-1-2">* Occupation</label>
+        <input type="occupation" id="occupation" required aria-describedby="occupation-error">
+        <p class="error-message milli island-1-4 push-0" id="occupation-error">Please provide an occupation.</p>
+      </div>
+      <div class="grid line8">
+        <div class="push kids unit s-1 m-1-2 l-1-2 gutter">
+          <label for="kids" class="push-1-2">* Number of Kids</label>
+          <input type="kids" id="kids" required aria-describedby="kids-error">
+          <p class="error-message kids milli island-1-4 push-0" id="kids-error">Please provide the information.</p>
+        </div>
+        <div class="push phone unit s-1 m-1-2 l-1-2 gutter">
+          <label for="family-members" class="push-1-2">* Number of Family Members</label>
+          <input type="members" id="members" required aria-describedby="members-error">
+          <p class="error-message milli island-1-4 push-0" id="members-error">Please provide the information.</p>
+        </div>
+      </div>
+    </div>
+    <div class="island">
+      <h2 class="mega">PET INFORMATION</h2>
+      <div class="push">
+        <p>Have you ever own a dog?</p>
+        <div class="push">
+          <input type="radio" name="gender" id="male">
+          <label for="male" class="padding-right"> Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female" class="gutter"> Female</label>
+          <input type="radio" name="gender" id="other">
+          <label for="other" class="gutter"> Other</label>
+        </div>
+      </div>
+    </div>
+
+
+  </form>
+</body>

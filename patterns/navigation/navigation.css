@@ -59,3 +59,19 @@ nav li:first-child a::before {
   }
 
 }
+
+.animals .outline {
+  stroke-dasharray: 500px;
+  stroke-dashoffset: 500px;
+  transition: all .6s linear;
+  transition-delay: .3s;
+}
+
+.animals:hover .outline,
+.animals .outlinecurrent {
+  stroke-dashoffset: 0;
+}
+
+.section li {
+  display: inline;
+}

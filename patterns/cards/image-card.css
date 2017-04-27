@@ -4,6 +4,7 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+css
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -16,28 +17,27 @@ html {
   box-sizing: inherit;
 }
 
-img {
-  width: 20%;
+.card img {
+  width: 100%;
 }
 
 .card {
   border: 3px solid #9c8881;
   border-radius: 8px;
-  margin-right: 1.5rem;
 }
 
-p {
+.card p {
   font-weight: normal;
   display: block;
   margin: 0;
 }
 
-h2 {
+.card h2 {
   display: block;
   margin: 0;
 }
 
-a {
+.card a {
   background-color: #9c8881;
   border-radius: 5px;
   padding: .5rem;
@@ -46,9 +46,14 @@ a {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 1rem;
+  color: white;
 }
 
-a:hover {
+.card a:hover {
   color: #fff;
   background-color: #edd7c8;
+}
+
+.header h2 {
+  color: var(--color-primary);
 }

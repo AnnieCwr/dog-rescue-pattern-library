@@ -24,6 +24,7 @@ h2 {
 p {
   font-family: var(--font-secondary);
   color: var(--color-neutural-grey);
+  font-weight: normal;
 }
 
 a {
