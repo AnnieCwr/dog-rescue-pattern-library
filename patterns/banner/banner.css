@@ -14,15 +14,11 @@
 
 .banner-content {
   margin: 10% 0;
+  padding-top: 8rem;
 }
 
 .banner h1 {
   color: #fff;
-}
-
-.banner h2 {
-  color: #fff;
-  width: 41%;
 }
 
 .btnn {
@@ -36,4 +32,120 @@
 .btnn:hover {
   background-color: #edd7c8;
   color: #fff;
+}
+
+.banner-text {
+  font-size: 14px;
+  color: #fff;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  top: 2.4rem;
+  right: 1rem;
+  width: 77%;
+  background-color: transparent;
+}
+
+.nav li {
+  display: block;
+}
+
+.nav-close,
+.nav-open {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-check {
+  /* Put the checkbox off the top of the screen */
+  position: absolute;
+  top: -3em;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.125rem;
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -2rem;
+  right: .6rem;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: #333;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.nav-close {
+  display: none;
+}
+
+.header {
+  position: relative;
+}
+
+@media only screen and (min-width: 59em) {
+
+  nav a {
+    display: inline;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav-check,
+  .nav-label {
+    display: none;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
+  .banner-content {
+    margin: 10% 0;
+    padding-top: 0;
+  }
+
+  .banner-text {
+    width: 41%;
+    font-size: 1rem;
+  }
+
+  .nav li {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 74em) {
+
+  .logo {
+    text-align: left;
+  }
+
+  .nav {
+    text-align: right;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
 }

@@ -22,21 +22,27 @@
       <div class="unit xs-1 s-1 m-1 l-1-4 logo">
         <img src="../images/logo-white.svg" alt="">
       </div>
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <!-- This is the button we’d click to open/close the navigation -->
+      <label class="nav-label" for="nav-check">
+        <img src="../images/nav-icon.png" alt="" class="nav-open">
+        <img src="../images/nav-icon-close.svg" alt="" class="nav-close">
+      </label>
       <nav class="unit xs-1 s-1 m-1 l-3-4 nav">
-        <ul class="island list-group-inline">
+        <ul class="island list-group">
           <li class="milli"><a href="#">Home</a></li>
           <li class="milli"><a href="adoption.html">Adoption</a></li>
-          <li class="milli"><a href="#">Happy Tails</a></li>
+          <li class="milli"><a href="adopted.html">Happy Tails</a></li>
           <li class="milli"><a href="form.html">Application</a></li>
           <li class="milli"><a href="#">FAQ</a></li>
-          <li class="milli"><a href="#">Contact Us</a></li>
+          <li class="milli"><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </div>
     <div class="banner width island-double pad-b-2">
       <div class="banner-content">
         <h1 class="meta">Royal Rescue</h1>
-        <h2 class="milli">LOYAL Rescue Inc. is a foster-based rescue and we do not operate a shelter. Should you be the successful applicant for this pet, you are then welcome to come and meet the dog. You are not obligated to adopt, should you determine the fit is not correct, however we must go through this process prior to meeting the dog.</h2>
+        <h2 class="milli banner-text">LOYAL Rescue Inc. is a foster-based rescue and we do not operate a shelter. Should you be the successful applicant for this pet, you are then welcome to come and meet the dog. You are not obligated to adopt, should you determine the fit is not correct, however we must go through this process prior to meeting the dog.</h2>
         <a href="adoption.html" class="btnn">Adopt Today!</a>
       </div>
     </div>
@@ -93,16 +99,16 @@
   </div>
   <div>
     <div class="island-1-2 grid section-home push-2">
-      <div class="unit s-1-2 m-1-2 l-1-2 gutter">
+      <div class="unit s-1 m-1-2 l-1-2 gutter">
         <img class="img-flex" src="../images/matty-sievers-215440.jpg" alt="">
       </div>
-      <div class="content inline unit s-1-2 m-1-2 l-1-2">
+      <div class="content inline unit s-1 m-1-2 l-1-2 gutter">
         <h2> Dog of the week: Abbey</h2>
         <p class="milli width">I had the great pleasure of spending 2.5 hours in the car with Abi when I transported her from her temporary foster mom to her long-term foster mom. We met in a parking lot, half asleep, at 6am and as soon as I said her name she ran over and jumped into my arms. She rode the entire way on my lap and between naps and loads of kisses (whether I wanted them or not! lol), we became fast friends.</p>
         <a class="btn btn-reg" href="#">Check out our blog !</a>
       </div>
     </div>
-    <div class="contact">
+    <div id="contact">
       <form class="island w-1-2 center" method="post" novalidate>
         <h2>Contact Us</h2>
         <div class="error-message error-message-highlighted push island1-2" role="alert" aria-live="assertive">
