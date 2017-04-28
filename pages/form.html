@@ -17,22 +17,22 @@
   <header class="logo grid gutter pad-t-2">
     <div class="unit xs-1 s-1 m-1 l-1-4 logo">
       <a href="#">
-       <img src="../images/logo.svg" alt="">
+        <img src="../images/logo.svg" alt="">
       </a>
     </div>
     <nav class="unit xs-1 s-1 m-1 l-3-4 nav">
       <ul class="island list-group-inline">
         <li class="milli"><a href="home.html">Home</a></li>
-        <li class="milli"><a href="#">Adoption</a></li>
+        <li class="milli"><a href="adoption.html">Adoption</a></li>
         <li class="milli"><a href="#">Happy Tails</a></li>
-        <li class="milli"><a href="#">Application</a></li>
+        <li class="milli"><a href="form.html">Application</a></li>
         <li class="milli"><a href="#">FAQ</a></li>
         <li class="milli"><a href="#">Contact Us</a></li>
       </ul>
     </nav>
   </header>
   <form class="max-lenghth island pad-t" method="post" novalidate>
-    <h1>Application Form</h1>
+    <h1 class="page-title">Application Form</h1>
     <div class="island">
       <h2 class="mega">BASIC INFORMATION</h2>
       <div class="grid line1">
@@ -62,7 +62,7 @@
       <div class="grid line5">
         <div class="push unit s-1 m-1-2 l-1-2 gutter">
           <label for="province" class="push-1-2">Province</label>
-          <select id="fitness" name="fitness">
+          <select id="province" name="fitness">
             <option>Ontario</option>
             <option>Alberta</option>
             <option>British Columbia</option>
@@ -70,9 +70,9 @@
             <option>New Brunswick</option>
           </select>
         </div>
-        <div class="push city unit s-1 m-1-2 l-1-2 gutter">
+        <div class="push code unit s-1 m-1-2 l-1-2 gutter">
           <label for="age" class="push-1-2">* Zip Code</label>
-          <input id="city" required aria-describedby="code-error">
+          <input id="code" required aria-describedby="code-error">
           <p class="error-message milli island-1-4 push-0" id="code-error">Please put in valid zip Code.</p>
         </div>
       </div>
@@ -82,45 +82,129 @@
           <input type="email" id="email" required aria-describedby="email-error">
           <p class="error-message milli island-1-4 push-0" id="email-error">Please provide a correct email address.</p>
         </div>
-        <div class="push phone unit s-1 m-1-2 l-1-2 gutter">
-          <label for="phone" class="push-1-2">* Phone</label>
-          <input type="phone" id="phone" required aria-describedby="phone-error">
-          <p class="error-message milli island-1-4 push-0" id="phone-error">Please provide a phone number.</p>
+        <div class="push number unit s-1 m-1-2 l-1-2 gutter">
+          <label for="number" class="push-1-2">* Phone</label>
+          <input type="number" id="number" required aria-describedby="number-error">
+          <p class="error-message milli island-1-4 push-0" id="number-error">Please provide a phone number.</p>
         </div>
       </div>
-      <div class="push occupation gutter">
-        <label for="occupation" class="push-1-2">* Occupation</label>
-        <input type="occupation" id="occupation" required aria-describedby="occupation-error">
-        <p class="error-message milli island-1-4 push-0" id="occupation-error">Please provide an occupation.</p>
+      <div class="push job gutter">
+        <label for="job" class="push-1-2">* Occupation</label>
+        <input type="text" id="job" required aria-describedby="job-error">
+        <p class="error-message milli island-1-4 push-0" id="job-error">Please provide an occupation.</p>
       </div>
       <div class="grid line8">
         <div class="push kids unit s-1 m-1-2 l-1-2 gutter">
           <label for="kids" class="push-1-2">* Number of Kids</label>
-          <input type="kids" id="kids" required aria-describedby="kids-error">
+          <input type="text" id="kids" required aria-describedby="kids-error">
           <p class="error-message kids milli island-1-4 push-0" id="kids-error">Please provide the information.</p>
         </div>
         <div class="push phone unit s-1 m-1-2 l-1-2 gutter">
-          <label for="family-members" class="push-1-2">* Number of Family Members</label>
-          <input type="members" id="members" required aria-describedby="members-error">
-          <p class="error-message milli island-1-4 push-0" id="members-error">Please provide the information.</p>
+          <label for="members" class="push-1-2">* Number of Family Members</label>
+          <input type="text" id="members" required aria-describedby="text-error">
+          <p class="error-message milli island-1-4 push-0" id="text-error">Please provide the information.</p>
         </div>
       </div>
     </div>
     <div class="island">
       <h2 class="mega">PET INFORMATION</h2>
-      <div class="push">
-        <p>Have you ever own a dog?</p>
-        <div class="push">
-          <input type="radio" name="gender" id="male">
-          <label for="male" class="padding-right"> Male</label>
-          <input type="radio" name="gender" id="female">
-          <label for="female" class="gutter"> Female</label>
-          <input type="radio" name="gender" id="other">
-          <label for="other" class="gutter"> Other</label>
+      <div class="gutter">
+        <div class="push-2">
+          <p>Have you ever own a dog?</p>
+          <div class="push">
+            <input type="radio" name="gender" id="male">
+            <label for="male" class="padding-right"> Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female" class="gutter"> Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other" class="gutter"> Other</label>
+          </div>
+        </div>
+        <div class="push-2 phone unit s-1 m-1-2 l-1-2">
+          <label for="now" class="push-1-2">Where is the dog now</label>
+          <input type="text" id="now" required aria-describedby="now-error">
+          <p class="error-message milli island-1-4 push-0" id="now-error">Please provide the pet's current status</p>
+        </div>
+        <div class="push-2">
+          <p>Do you have any other pets?</p>
+          <div class="push">
+            <input type="radio" name="question" id="yes">
+            <label for="yes" class="padding-right">Yes</label>
+            <input type="radio" name="question" id="no">
+            <label for="no" class="gutter">No</label>
+          </div>
+        </div>
+        <div class="push-2 unit s-1 m-1-2 l-1-2">
+          <label for="province" class="push-1-2">Which following best describe the dog that you're looking for?</label>
+          <select id="describe" name="describe">
+            <option>Age</option>
+            <option>Size</option>
+            <option>Activity</option>
+            <option>Level</option>
+            <option>Gender</option>
+          </select>
+        </div>
+        <div class="push-2">
+          <label class="push-1-2">Is there anything elese you want to state?</label>
+          <textarea id="state" name="state"></textarea>
+        </div>
+        <div class="push pad-t-1-2">
+          <input type="checkbox" id="agree" required aria-describedby="agree-error">
+          <label class="milli" for="agree">
+            *I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved.
+          </label>
+          <p class="error-message milli island-1-4 push-0" id="agree-error">Please read and agree</p>
+        </div>
+        <div class="pad-1-2">
+          <button class="btn btn-reg" type="submit">Submit</button>
         </div>
       </div>
     </div>
-
-
   </form>
+  <footer class="pad-b">
+    <div class="grid pad-t-2">
+      <div class="unit s-1 m-1-3 l-1-3 gutter">
+        <h3 class="milli">Sponsered by</h3>
+        <a href="https://kuranda.com/donate/3484">Kuranda Dog & Cat Bed</a>
+        <p class="micro">LOYAL Rescue Inc. © 2005-2017</p>
+      </div>
+      <div class="unit s-1 m-1-3 l-1-3 gutter">
+        <h3 class="milli">Social</h3>
+        <div class="push">
+          <a href="#">
+            <div>
+              <i class="icon i-32">
+                <img src="../images/instagram.svg" alt="">
+              </i>
+              <span class="icon-label milli">Instagram</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="icon i-32">
+                <img src="../images/facebook.svg" alt="">
+              </i>
+              <span class="icon-label milli">Facebook</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="icon i-32">
+                <img src="../images/twitter.svg" alt="">
+              </i>
+              <span class="icon-label milli">Twitter</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="unit s-1 m-1-3 l-1-3 gutter">
+        <h3 class="milli">Address</h3>
+        <p class="milli push-0">171 Rink St, Peterborough</p>
+        <p class="milli">ON K9J 2J6</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
 </body>
+</html>

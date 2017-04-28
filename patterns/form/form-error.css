@@ -21,6 +21,7 @@ html {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   border-radius: 9px;
+  font-weight: 600;
 }
 
 .btn-reg:hover {
@@ -81,4 +82,8 @@ select {
 textarea {
   border-color: var(--color-primary);
   border-radius: 3px;
+}
+
+.contact {
+  background-color: #fbf4eb;
 }

@@ -24,13 +24,17 @@ h2 {
 p {
   font-family: var(--font-secondary);
   color: var(--color-neutural-grey);
-  font-weight: normal;
+  font-weight: 600;
+}
+
+label {
+  font-weight: 600;
 }
 
 a {
   color: var(--color-primary-light);
   text-decoration: none;
-
+  font-weight: 600;
 }
 
 a:hover {
@@ -40,4 +44,12 @@ a:hover {
 mark {
   background-color: var(--color-neutural-grey);
   color: #fff;
+}
+
+select option {
+  font-weight: 600;
+}
+
+.page-title {
+  color: #e0baa9;
 }

@@ -22,7 +22,12 @@
 }
 
 .card a:hover .circle {
-  fill: #cdb8ab;
+  fill: var(--color-primary-light);
+  stroke: var(--color-primary-light);
+}
+
+.card h2:hover {
+  color: var(--color-primary-light);
 }
 
 .card a:hover #paws,
